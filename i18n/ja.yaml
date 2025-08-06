@@ -47,3 +47,10 @@ search:
 
     resultTitle:
         other: "#PAGES_COUNT 件 （#TIME_SECONDS 秒）"
+
+footer:
+    builtWith:
+        other: Built with {{ .Generator }}
+
+    designedBy:
+        other: Theme {{ .Theme }} modified by {{ .DesignedBy }}
