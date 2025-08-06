@@ -1,0 +1,35 @@
+<script async defer src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+    :root {
+        --waline-theme-color: #0e6db1;
+        --waline-active-color: #107fcf;
+    }
+</style>
+
+<!-- {{- with .Site.Params.comments.waline -}}
+<script>
+    /// Waline client configuration see: https://waline.js.org/en/reference/client.html
+    addLoadEvent(function(){
+        new Waline({
+            el: '#waline',
+            dark: 'html[data-scheme="dark"]',
+            serverURL: 'https://comment.lv5.moe',
+            visitor: true,
+            copyright: false,
+            avatar: 'retro',
+            emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq', 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji'],
+            requiredMeta: ['nick', 'mail']
+        });
+    });
+</script> -->
+{{- end -}}
